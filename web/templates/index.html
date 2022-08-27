@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<title>{%block title%}Home{%endblock%}</title>
+{% block content %}
+<center>
+<div class="container my-5">
+  <a href="/login">
+    <button type="button" class="btn btn-outline-dark">Login</button></a>
+  
+    <div class="container my-3"></div>
+    <a href="/sign-up">
+<button type="button" class="btn btn-outline-dark">Signup</button></a>
+</div>
+</center>
+{% endblock %}
+
+{% block loginred %}
+<li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/login">login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="sign-up">sign-up</a>
+  </li>
+  {% endblock %}
